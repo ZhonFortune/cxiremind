@@ -1,0 +1,58 @@
+/* 主样式 */
+.panel{
+    width: 100%; height: 98vh;
+    margin-right: 10px;
+    background-color: #FFFFFF; border-radius: 15px;
+    align-items: center; justify-content: space-around;
+}
+
+/* 页头 */
+.panel-header{
+    width: 98%; height: 85px;
+    margin-top: 10px; margin-bottom: 10px;
+}
+
+/* 页头:标题 */
+.panel-header .panel-title{
+    width: auto; height: 30px;
+    justify-content: start; text-align: left;
+}
+/* 页头:标题:文本 */
+.panel-header .panel-title span{
+    font-size: 1.5rem; font-weight: bold;
+    color: #0B4A81; line-height: 30px;
+}
+
+/* 页头:标签 */
+.panel-header .panel-tag {
+    width: 100%; height: 40px;
+    margin-top: 15px;
+    background-color: #FAFAFA; border-radius: 7px;
+    justify-content: start; align-items: center;
+}
+
+/* 页头:标签:列表[ul] */
+.panel-header .panel-tag .tag-list{
+    width: auto; height: 30px;
+    align-items: center; justify-content: start;
+}
+
+/* 页头:标签:元素[li] */
+.panel-header .panel-tag .tag-list .tag-item{
+    width: auto; height: 30px;
+    margin-left: 10px; text-align: center;
+    background-color: #F2F2F2; border-radius: 6px;
+}
+
+/* 页头:标签:元素[li]:文本[span] */
+.panel-header .panel-tag .tag-list .tag-item span{
+    font-size: 0.7rem; font-weight: 600;
+    color: #0B4A81; line-height: 30px;
+    margin-left: 10px; margin-right: 10px;
+}
+
+/* 操作面板 */
+.panel-operation{
+    width: 98%; height: calc(100vh - 115px);
+    border-radius: 10px;
+}

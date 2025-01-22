@@ -1,0 +1,21 @@
+{
+  "name": "cxcalendar-iphone",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "bin": {
+    "cxiremind": "index.js"
+  },
+  "author": "zhonfortune",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "express": "^4.21.2",
+    "mysql": "^2.18.1"
+  }
+}

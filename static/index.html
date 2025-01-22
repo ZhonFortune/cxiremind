@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超星学习通 | IPHONE日历</title>
+    <!-- 叠层样式文件 -->
+    <link rel="stylesheet" href="./style/css/app.css">
+    <link rel="stylesheet" href="./style/css/menu.css">
+    <link rel="stylesheet" href="./style/css/panel.css">
+    <link rel="stylesheet" href="./style/css/panel-operation/overview.css">
+    <!-- 图标 -->
+    <link rel="icon" href="./style/img/icon.ico">
+    <!-- 全局样式 -->
+    <style>
+        body{height: 100vh; width: 100%; background-color: white; overflow: hidden;}
+        a{text-decoration: none;}
+        *{margin: 0; padding: 0; transition: ease-in-out 0.3s 0s}
+        span{font-size: 1rem; color: black;}
+        input{border: 0; outline: 0; font-size: 1rem}
+        input::placeholder{color: black;}
+        input:focus{outline: none;}
+        li{list-style: none;}
+        ul{list-style: none;}
+        /* 全局CSS样式 */
+        .flex-row{display: flex; flex-direction: row;}
+        .flex-column{display: flex; flex-direction: column;}
+    </style>
+</head>
+<body>
+    <!-- 页面 -->
+    <div class="app flex-row">
+        <!-- 菜单栏 -->
+        <div class="menu flex-column">
+            <!-- 菜单列表 -->
+            <!-- Menu List:
+                1. 总览 id=overview
+                2. 通知列表 id=notice
+                3. 日历 id=calendar
+                4. 数据库 id=database
+                5. 接口 id=api
+                6. 账户 id=account
+                7. 关于 id=about
+            -->
+            <ul class="menu-list flex-column">
+                <li class="menu-item flex-row isStandBy" id="overview">
+                    <div class="menu-line"></div>
+                    <div class="menu-text">
+                        <span>总览</span>
+                    </div>
+                </li>
+                <li class="menu-item flex-row isStandBy" id="notice">
+                    <div class="menu-line"></div>
+                    <div class="menu-text">
+                        <span>通知列表</span>
+                    </div>
+                </li>
+                <li class="menu-item flex-row isStandBy" id="calendar">
+                    <div class="menu-line"></div>
+                    <div class="menu-text">
+                        <span>日历</span>
+                    </div>
+                </li>
+                <li class="menu-item flex-row isStandBy" id="database">
+                    <div class="menu-line"></div>
+                    <div class="menu-text">
+                        <span>数据库</span>
+                    </div>
+                </li>
+                <li class="menu-item flex-row isStandBy" id="api">
+                    <div class="menu-line"></div>
+                    <div class="menu-text">
+                        <span>接口</span>
+                    </div>
+                </li>
+                <li class="menu-item flex-row isStandBy" id="account">
+                    <div class="menu-line"></div>
+                    <div class="menu-text">
+                        <span>账户</span>
+                    </div>
+                </li>
+                <li class="menu-item flex-row isStandBy" id="about">
+                    <div class="menu-line"></div>
+                    <div class="menu-text">
+                        <span>关于</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 面板栏 -->
+        <div class="panel flex-column">     
+            <!-- 页头 -->
+            <div class="panel-header flex-column">      
+                <!-- 标题 -->
+                <div class="panel-title flex-row">
+                    <span>总览</span>
+                </div>
+                <!-- 标签 -->
+                <div class="panel-tag flex-row">
+                    <ul class="tag-list flex-row">
+                        <!-- List
+                            1. id=projectName
+                            2. id=language
+                            3. id=nowPage
+                            4. id=nowAccount
+                        -->
+                        <li class="tag-item" id="projectName">
+                            <span>CXCALENDAR&nbsp;-&nbsp;IPHONE</span>
+                        </li>
+                        <li class="tag-item" id="language">
+                            <span>简体中文</span>
+                        </li>
+                        <li class="tag-item" id="nowPage">
+                            <span>Page/总览</span>
+                        </li>
+                        <li class="tag-item" id="nowAccount">
+                            <span>账号:&nbsp;12345678900</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 操作区域 -->
+            <div class="panel-operation flex-column">    
+                <!-- 总览 -->
+                <div class="overview flex-row">
+                    <!-- 面板 -->
+                    <div class="overview-panel flex-column">
+                        <!-- 栏 -->
+                        <div class="overview-panel-bar flex-row">
+                        </div>
+                    </div>
+                    <!-- 通知 -->
+                    <div class="overview-notice flex-row">
+                        <!-- 显示区 -->
+                        <div class="overview-notice-box flex-column">
+                            <!-- 标题 -->
+                            <div class="overview-notice-title flex-row">
+                                <!-- 图标 -->
+                                <div class="overview-notice-title-icon flex-row">
+                                    <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="iconNotification"
+                                            d="M22 4.88889C22 7.58896 19.8112 9.77777 17.1111 9.77777C14.411 9.77777 12.2222 7.58896 12.2222 4.88889C12.2222 2.18884 14.411 0 17.1111 0C19.8112 0 22 2.18884 22 4.88889ZM9.77777 2.44446L2.44446 2.44446C1.09442 2.44446 0 3.53885 0 4.88889L0 19.5555C0 20.9056 1.09442 22 2.44446 22L17.1111 22C18.4612 22 19.5555 20.9056 19.5555 19.5555L19.5555 12.2222L17.1111 12.2222L17.1111 19.5555L2.44446 19.5555L2.44446 4.88889L9.77777 4.88889L9.77777 2.44446Z"
+                                            clip-rule="evenodd" fill-opacity="1.000000" fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <!-- 文本 -->
+                                <div class="overview-notice-title-text flex-row">
+                                    <span>通知列表</span>
+                                </div>
+                            </div>
+                            <!-- 列表 [动态] -->
+                            <div class="overview-notice-list flex-column">
+                                <!-- 示例通知样式:操作通知 -->
+                
+                            </div>
+                        </div>
+                        <!-- 装饰条 -->
+                        <div class="overview-notice-decorator flex-row"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="./javascript/own/menuChange.js" type="module"></script>
+    <!-- Lib -->
+    <script src="./javascript/jquery-3.7.1.min.js" type="application/javascript"></script>
+    <!-- script -->
+    <script type="module">
+        import { pagenotice } from "./javascript/public/pagenotice.js";
+        import { insertNotice } from "./javascript/public/pagenotice.js";
+        const panelTitle = document.querySelector(".panel-header .panel-title");
+        panelTitle.addEventListener("click", function () {
+            pagenotice('normal', '点击了标题','CLICK TITLE', "2024-12-01 00:00:00");
+        })
+        const panelTag = document.querySelector(".panel-header .panel-tag");
+        panelTag.addEventListener("click", function () {
+            pagenotice('warn', '点击了标签','CLICK TAG', "2024-12-01 00:00:00");
+        })
+    </script>
+    </script>
+</body>
+</html>

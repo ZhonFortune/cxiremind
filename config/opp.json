@@ -1,0 +1,37 @@
+{
+    "overview": {
+        "name": "总览",
+        "id": "overview",
+        "path": "overview.html"
+    },
+    "notice": {
+        "name": "通知列表",
+        "id": "notice",
+        "path": "notice.html"
+    },
+    "calendar": {
+        "name": "日历",
+        "id": "calendar",
+        "path": "calendar.html"
+    },
+    "database": {
+        "name": "数据库",
+        "id": "database",
+        "path": "database.html"
+    },
+    "api": {
+        "name": "接口",
+        "id": "api",
+        "path": "api.html"
+    },
+    "account": {
+        "name": "账户",
+        "id": "account",
+        "path": "account.html"
+    },
+    "about": {
+        "name": "关于",
+        "id": "about",
+        "path": "about.html"
+    }
+}

@@ -1,0 +1,149 @@
+/* 主盒子 */
+.overview {
+    width: 100%;
+    /* 这里需要减去页头的高度 98vh为主面板的高度*/
+    height: calc(98vh - 105px);
+    overflow: hidden;
+    justify-content: space-around; align-items: center;
+}
+
+/* 不显示滚动条 */
+.overview::-webkit-scrollbar,.overview-notice-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* 面板 */
+.overview-panel{
+    /* 这里需要减去页头的高度 */
+    height: calc(98vh - 105px); width: 100%;
+    justify-content: space-around; align-items: center;
+    background-color: rgb(194, 194, 194); margin-right: 20px;
+}
+
+/* 通知 */
+.overview-notice {
+    width: 500px; 
+    /* 这里需要减去页头的高度 */
+    height: calc(98vh - 105px);
+    justify-content: space-around; align-items: center; float: right;
+    background-color: #FAFAFA; border-radius: 10px;
+}
+
+/* 通知:显示区 */
+.overview-notice-box{
+    height: calc(98vh - 105px); width: 100%;
+    justify-content: start; align-items: center;
+}
+
+/* 通知:显示区:标题 */
+.overview-notice-title {
+    height: 30px; width: 90%;
+    margin-bottom: 10px; margin-top: 10px;
+    justify-content: space-around; align-items: flex-start;
+}
+
+/* 通知:显示区:标题:图标盒子 */
+.overview-notice-title-icon {
+    height: 30px; width: 30px;
+    justify-content: center; align-items: center; margin-right: 15px;
+}
+
+/* 通知:显示区:标题:图标 */
+.overview-notice-title-icon svg {
+    height: 75%; width: 75%;
+    fill: #0B4A81;
+}
+
+/* 通知:显示区:标题:文字盒子 */
+.overview-notice-title-text {
+    height: 30px; width: 100%;
+    align-items: center;
+}
+
+/* 通知:显示区:标题:文字 */
+.overview-notice-title-text span {
+    font-size: 1.1rem; font-weight: 700;
+    color: #0B4A81;
+}
+
+/* 通知:显示区:列表 */
+.overview-notice-list {
+    height: auto; width: 90%;
+    justify-content: start; align-items: center;
+    overflow-x: hidden; overflow-y: auto;
+}
+
+/* 通知:显示区:元素 */
+.overview-notice-list-item {
+    height: auto; width: 100%;
+    justify-content: space-around; align-items: start;
+    background-color: #E1EFFD; border-radius: 6px;
+    margin-bottom: 10px; margin-top: 5px;
+}
+
+/* 通知:显示区:元素:通知类型 */
+.overview-notice-list-item .ov-type {
+    height: 15px; width: auto;
+    margin-top: 10px; margin-bottom: 5px; margin-left: 15px;
+    justify-content: start; align-items: center;
+}
+
+/* 通知:显示区:元素:通知类型:图标 */
+.overview-notice-list-item .ov-type .ov-type-icon {
+    height: 15px; width: 15px;
+    justify-content: center; align-items: center;
+}
+.overview-notice-list-item .ov-type .ov-type-icon div {
+    height: 12px; width: 12px; margin-top: 1.5px;
+    background-color: #14DD05; 
+    border-radius: 3px;
+}
+
+/* 通知:显示区:元素:通知类型:文字 */
+.overview-notice-list-item .ov-type span {
+    line-height: 15px; text-align: left;
+    margin-left: 6px;
+    font-size: 0.75rem; font-weight: 550;
+    color: #14DD05;
+}
+
+/* 通知:显示区:元素:割线 */
+.overview-notice-list-item .ov-line {
+    height: 1.5px; width: 70%;
+    margin-top: 10px; margin-bottom: 15px; margin-left: 15px;
+    background-color: #D2E5F9;
+}
+
+/* 通知:显示区:元素:内容 */
+.overview-notice-list-item .ov-content {
+    height: auto; width: 100%;
+    justify-content: space-around; align-items: center;
+    margin-left: 15px; margin-bottom: 15px;
+}
+
+/* 通知:显示区:元素:内容:提示线 */
+.overview-notice-list-item .ov-content .ov-content-line {
+    height: 100%; width: 4px; border-radius: 4px;
+    background-color: #14DD05;
+    margin-right: 10px;
+}
+
+/* 通知:显示区:元素:内容:文本 */
+.overview-notice-list-item .ov-content-body{
+    height: 100%; width: 100%;
+    margin-right: 10px; margin-top: 20px; margin-bottom: 20px;
+    justify-content: center; align-self: center;
+}
+.overview-notice-list-item .ov-content-body span:nth-child(1) {
+    font-size: 1rem; color: #0B4A81; font-weight: 600;
+}
+.overview-notice-list-item .ov-content-body span:nth-child(2) {
+    font-size: 0.6rem; color: #3E90F3; margin-top: 5px;
+}
+
+/* 通知:装饰条 */
+.overview-notice-decorator {
+    height: calc(98vh - 105px); width: 7px;
+    background-color: #2872E8; border-radius: 0 10px 10px 0;
+    float: right;
+}

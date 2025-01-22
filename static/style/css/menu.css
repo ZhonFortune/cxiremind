@@ -1,0 +1,59 @@
+/* 菜单盒子样式 */
+.menu{
+    align-items: center;
+    height: 98vh; width: 250px;
+    margin-left: 10px; margin-right: 8px;
+    background-color: #E1EFFD; border-radius: 15px;
+}
+
+/* 菜单列表样式 */
+.menu-list{
+    height: auto; width: 90%;
+    margin-top: 10px;
+    align-items: center; justify-content: start;
+}
+
+/* 菜单样式 */
+.menu-item{
+    height: 40px; width: 100%;
+    align-items: center; justify-content: space-around;
+    background-color: #D1E7FD; border-radius: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+/* 菜单内容样式 */
+.menu-line{ /* 菜单线 */
+    height: 25px; width: 5px;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+.menu-text { /* 菜单文字盒子 */
+    height: 40px; width: 100%;
+    margin-right: 10px;
+    text-align: center;
+}
+.menu-text span { /* 菜单文字 */
+    line-height: 40px;
+    font-size: 0.9rem;
+    font-family: "思源黑体";
+    font-weight: 500;
+}
+.menu-item.isActive .menu-line{ /* 菜单激活时:菜单线 */
+    background-color: #0B4A81;
+}
+.menu-item.isActive .menu-text span{ /* 菜单激活时:菜单文字 */
+    color: #0B4A81;
+}
+.menu-item.isStandBy .menu-line{ /* 菜单未激活时:菜单线 */
+    background-color: #148AE3;
+}
+.menu-item.isStandBy .menu-text span{ /* 菜单未激活时:菜单文字 */
+    color: #148AE3;
+}
+.menu-item.isStandBy:hover .menu-line{ /* 菜单悬停时:菜单线 */
+    background-color: #0B4A81;
+}
+.menu-item.isStandBy:hover .menu-text span{ /* 菜单悬停时:菜单文字 */
+    color: #0B4A81;
+}
