@@ -1,5 +1,5 @@
 # 超星学习通 —— 通知 —— IPHONE日历
-![HTML5](https://img.shields.io/badge/HTML-400000?logo=html5) ![CSS3](https://img.shields.io/badge/CSS3-5AF06E?logo=css3&color) ![Javascript](https://img.shields.io/badge/Javascript-F8A035?logo=Javascript) ![Node.js](https://img.shields.io/badge/Node.js-15E1AE?logo=Node.js) ![Version](https://img.shields.io/github/package-json/v/ZhonFortune/cxiremind) ![License](https://img.shields.io/github/license/ZhonFortune/JetchPage) ![platform](https://img.shields.io/badge/Platform-Web-01D7E2)
+![HTML5](https://img.shields.io/badge/HTML-400000?logo=html5) ![CSS3](https://img.shields.io/badge/CSS3-5AF06E?logo=css3&color) ![Javascript](https://img.shields.io/badge/Javascript-F8A035?logo=Javascript) ![Node.js](https://img.shields.io/badge/Node.js-15E1AE?logo=Node.js) ![Version](https://img.shields.io/github/package-json/v/ZhonFortune/cxiremind) ![License](https://img.shields.io/github/license/ZhonFortune/cxiremind) ![platform](https://img.shields.io/badge/Platform-Web-01D7E2)
 
 <br>
 
