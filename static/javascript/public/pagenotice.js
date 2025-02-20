@@ -126,7 +126,7 @@ async function getUniqueToken() {
 async function checkTokenExists(tokenTemp) {
     return new Promise((resolve, reject) => {
         $.ajax({
-            url: "/api/checktokenisexist",
+            url: "/api/token/check",
             type: "POST",
             contentType: 'application/json',
             data: JSON.stringify({ 'token': tokenTemp }),

@@ -3,7 +3,7 @@
 
 <br>
 
-[快速开始](#quickStart) | [配置文件](./lib/docs/config.md) | [更新日志](./lib/docs/update.md) 
+[快速开始](#quickStart) | [配置文件](./) | [更新日志](./) 
 
 <br>
 
